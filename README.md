@@ -1,7 +1,5 @@
 # TaskCafe
 
-![Taskcafe](./.github/taskcafe_preview.png)
-
 ## Features
 
 The following features have been implemented:
@@ -10,12 +8,6 @@ The following features have been implemented:
 - View all your current assigned tasks through the My Tasks view
 - Personal projects
 - Task comments and activity
-
-This project is still in active development, so some options may not be fully implemented yet.
-
-**For updates on development, join the [Discord server](https://discord.gg/JkQDruh).**
-
-For a list of planned features, check out the [Roadmap](https://github.com/JordanKnott/taskcafe/wiki/Roadmap)!
 
 ## Installation
 
@@ -26,7 +18,7 @@ You'll need both [docker](https://www.docker.com/) & [docker-compose](https://do
 First clone the repository:
 
 ``` bash
-git clone https://github.com/JordanKnott/taskcafe && cd taskcafe
+git clone https://github.com/ShivamAgarwal-code/Matrice-task.git && cd taskcafe
 ```
 
 Now do the following:
@@ -49,7 +41,7 @@ You'll need [Golang](https://golang.org/dl/) installed on your machine.
 Next, clone the repository:
 
 ``` bash
-git clone https://github.com/JordanKnott/taskcafe && cd taskcafe
+git clone https://github.com/ShivamAgarwal-code/Matrice-task.git && cd taskcafe
 ```
 
 Next we need to build the binary. This project uses [Mage](https://magefile.org/) for its build tool.
@@ -70,7 +62,6 @@ The newly created `taskcafe` binary can be found in the __dist__ folder.
 
 It contains everything neccessary to run except the config file. An example config file can be found in `conf/app.example.toml`.
 
-For more information on configuration, please read the [wiki](https://github.com/JordanKnott/taskcafe/wiki/Configuration).
 The config will need to be copied to a `conf/app.toml` in the same place the binary is.
 
 Make sure to fill out the database section of the config in order to connect it to your database.
@@ -78,7 +69,4 @@ Make sure to fill out the database section of the config in order to connect it 
 Then run the database migrations with `taskcafe migrate`.
 
 Now you can run the web interface by running `taskcafe web`.
-
-[A more detailed guide for installing on Ubuntu/Debian](https://github.com/JordanKnott/taskcafe/wiki/Installation-(ubuntu-debian))
-
 
